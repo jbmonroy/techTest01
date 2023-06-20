@@ -1,0 +1,36 @@
+.wrapper {
+    margin: 1rem 0;
+    display: flex;
+    gap: .5rem
+}
+
+.btn-action {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border: none;
+    color: #fff;
+    border-radius: 4px;
+    transition: all .3s;
+    cursor: pointer;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
+}
+
+.btn-action:hover {
+    transform: scale(1.05);
+}
+
+.create {
+    background-color: var(--detail-blue);
+}
+
+.reset {
+    background-color: var(--detail-orange);
+}
+
+.update {
+    background-color: var(--detail-green);
+}
+
+.delete {
+    background-color: var(--detail-red);
+}

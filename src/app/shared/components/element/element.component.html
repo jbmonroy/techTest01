@@ -1,0 +1,11 @@
+<div class="wrapper shadow" [title]="element.title" [routerLink]="['/','article', element.id]">
+    <div class="thumb">
+        <img [src]="element.image" [alt]="element.title">
+    </div>
+    <div class="info">
+        <div class="header">
+            <div class="price">{{element.price | currency: 'MXN'}}</div>
+        </div>
+        <p class="name">{{element.title}}</p>
+    </div>
+</div>

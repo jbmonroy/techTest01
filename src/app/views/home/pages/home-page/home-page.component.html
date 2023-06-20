@@ -1,0 +1,25 @@
+<div class="container">
+    <header>
+        <h1>Lista de Productos</h1>
+        <div class="crud-panel">
+            <app-crud-panel [configs]="[
+                {
+                    type:'create',
+                    f: addElement 
+                },
+                {
+                    type:'reset',
+                    f: resetElements
+                },
+                {
+                    type:'logout',
+                    f: logout
+                }]"></app-crud-panel>
+        </div>
+    </header>
+    <main class="wrapper">
+        <div class="wrapper-in" *ngFor="let item of elements()">
+            <app-element [element]="item"></app-element>
+        </div>
+    </main>
+</div>

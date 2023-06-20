@@ -1,0 +1,67 @@
+.wrapper {
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-in {
+    width: 95%;
+    max-width: 600px;
+    padding: 3rem;
+    border: 1px solid #00000023;
+    border-radius: 25px;
+    background: #fff;
+}
+
+header i {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.form-in {
+    display: flex;
+    justify-content: center;
+    padding: .5rem 0;
+}
+
+.form-in input, button {
+    width: 100%;
+    max-width: 350px;
+    height: 50px;
+    padding: 0 1rem;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid #00000023;
+    transition: all .3s;
+}
+
+.form-in input::placeholder {
+    text-align: center;
+}
+
+.form-in .form-email:focus,
+.form-in .form-password:focus {
+    text-align: left;
+    outline: 1px solid #1b74e4;
+
+}
+
+.form-in .form-submit {
+    height: 40px;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: #1b74e4;
+    color: #fff;
+    font-size: 1.2rem;
+}
