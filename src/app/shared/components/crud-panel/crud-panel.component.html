@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <button *ngFor="let item of configs" class="btn-action" [ngClass]="{
+        'create':item.type === 'create',
+        'reset':item.type === 'reset',
+        'update':item.type === 'update',
+        'delete':item.type === 'delete' || item.type === 'logout',
+    }" (click)="item.f()" [title]="item.type">
+        <i class="uil" [ngClass]="{
+        'uil-plus-circle': item.type === 'create',
+        'uil-backward': item.type === 'reset',
+        'uil-edit': item.type === 'update',
+        'uil-trash-alt': item.type === 'delete',
+        'uil-signout': item.type === 'logout'
+    }"></i>
+    </button>
+</div>

@@ -1,0 +1,22 @@
+<div class="wrapper">
+    <div class="wrapper-in animate__animated animate__fadeIn">
+        <header>
+            <i class="uil uil-brackets-curly animate__animated animate__fadeInDown"></i>
+            <h1 class="title">Iniciar sesión en PT</h1>
+        </header>
+        <main>
+            <form class="form" [formGroup]="loginForm">
+                <div class="form-in">
+                    <input formControlName="username" type="email" class="form-email" placeholder="Correo electrónico">
+                </div>
+                <div class="form-in">
+                    <input formControlName="password" type="password" class="form-password" placeholder="Contraseña">
+                </div>
+                <div class="form-in">
+                    <button type="button" class="form-submit" (click)="login()">
+                        Iniciar sesión</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</div>

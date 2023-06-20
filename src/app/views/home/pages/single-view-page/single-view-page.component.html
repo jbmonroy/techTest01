@@ -1,0 +1,16 @@
+<div class="wrapper">
+    <div class="thumb">
+        <img [src]="data().image" [alt]="data().title">
+    </div>
+    <h1 class="name">{{data().title}}</h1>
+    <p class="category">en {{data().category}}</p>
+    <p class="price">{{data().price |currency:'MXN'}}</p>
+    <p class="rating"><i class="uil uil-star"></i> {{data().rating.rate}} <span
+            class="purchases">{{data().rating.count}}
+            calificaciones</span></p>
+    <p class="description">{{data().description}}</p>
+    <app-crud-panel [configs]="[
+            {type: 'update', f: updateElement},
+            { type: 'delete', f: deleteElement}
+        ]"></app-crud-panel>
+</div>
